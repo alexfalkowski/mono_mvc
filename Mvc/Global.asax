@@ -1,1 +1,1 @@
-<%@ Application Inherits="Mvc.MvcApplication" %>
+<%@ Application Inherits="Mvc.Global" %>
