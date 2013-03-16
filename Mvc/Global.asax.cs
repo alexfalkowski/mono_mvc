@@ -7,8 +7,8 @@ namespace Mvc
     {
         protected void Application_Start()
         {
-            MvcApplication.RegisterApplication();
             WebApiApplication.RegisterApplication();
+            MvcApplication.RegisterApplication();
         }
     }
 }
