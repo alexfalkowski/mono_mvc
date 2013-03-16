@@ -20,12 +20,3 @@ xbuild :build do |build|
   build.verbosity = 'quiet'
   build.parameters '/nologo'
 end
-
-desc 'Run the specs'
-nunit :specs => :build do |nunit|
-  file = 'tools/nunit-console'
-  nunit.command = file
-  nunit.options '-noshadow'
-  nunit.assemblies 'artifacts/System.Spec.Specs.dll'
-  nunit.parameters '-nologo'
-end
